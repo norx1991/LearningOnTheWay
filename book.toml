@@ -1,0 +1,6 @@
+[book]
+authors = ["norx1991"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Book Reading Note"

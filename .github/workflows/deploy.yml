@@ -32,3 +32,5 @@ jobs:
         git add .
         git commit -m "Deploy $GITHUB_SHA to gh-pages"
         git push --force
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

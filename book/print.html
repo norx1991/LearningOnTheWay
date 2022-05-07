@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Book Reading Note</title>
+        <title>Learning On the Way</title>
         <meta name="robots" content="noindex" />
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Computer Science</li><li class="chapter-item expanded affix "><li class="part-title">Interview</li><li class="chapter-item expanded "><a href="Leetcode/index.html"><strong aria-hidden="true">1.</strong> Leetcode</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Leetcode/array.html"><strong aria-hidden="true">1.1.</strong> Array</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Leetcode/4.html"><strong aria-hidden="true">1.1.1.</strong> 4. Median of Two Sorted Arrays</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Casual</li><li class="chapter-item expanded "><a href="Book-Reading-Note/index.html"><strong aria-hidden="true">2.</strong> Book Reading Note</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -105,7 +105,7 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">Book Reading Note</h1>
+                    <h1 class="menu-title">Learning On the Way</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -135,8 +135,43 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
-
+                        <div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="this-is-a-test-piece"><a class="header" href="#this-is-a-test-piece">This is a test piece</a></h1>
+<p>I want to write something down.</p>
+<div style="break-before: page; page-break-before: always;"></div><pre><code class="language-python">class Solution: 
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -&gt; float: 
+        if len(nums1) &lt; len(nums2): 
+            nums1, nums2 = nums2, nums1 
+        m, n = len(nums1), len(nums2) 
+        sum_length = m + n 
+        is_odd = sum_length % 2 == 1 
+        target = (sum_length + 1) // 2 
+        low = target - n  # The minimum number of elements from array 1 in the first half 
+        high = target  # The maximum number of elements from array 1 in the first half 
+        while low &lt;= high: 
+            num1_in_half = (low + high) // 2  # Number of elements from array 1 in the first half 
+            num2_in_half = target - num1_in_half 
+            if num1_in_half &gt; 0 and num2_in_half &lt; n and nums1[num1_in_half - 1] &gt; nums2[num2_in_half]: 
+                high = num1_in_half - 1 
+            elif num2_in_half &gt; 0 and num1_in_half &lt; m and nums2[num2_in_half - 1] &gt; nums1[num1_in_half]: 
+                low = num1_in_half + 1 
+            else: 
+                if num2_in_half == 0: 
+                    leftmax = nums1[num1_in_half - 1] 
+                elif num1_in_half == 0: 
+                    leftmax = nums2[num2_in_half - 1] 
+                else: 
+                    leftmax = max(nums1[num1_in_half - 1], nums2[num2_in_half - 1]) 
+                if is_odd: 
+                    return leftmax 
+                if num1_in_half == m: 
+                    rightmin = nums2[num2_in_half] 
+                elif num2_in_half == n: 
+                    rightmin = nums1[num1_in_half] 
+                else: 
+                    rightmin = min(nums1[num1_in_half], nums2[num2_in_half]) 
+                return (leftmax + rightmin) / 2
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

@@ -28,6 +28,8 @@
 # Interview
 - [Leetcode](Leetcode/README.md)
     - [Questions List](Leetcode/question-list.md)
+    - [Frequently Used Python Functions](Leetcode/freq-Python.md)
+    - [Frequently Used C++ Functions](Leetcode/freq-C++.md)
     - [Array](Leetcode/array.md)
       - [4. Median of Two Sorted Arrays](Leetcode/4.md)
       - [22. Generate Parentheses](Leetcode/22.md)
@@ -37,6 +39,7 @@
       - [88. Merge Sorted Array (in place)](Leetcode/88.md)
       - [225. Implement Stack using Queues](Leetcode/225.md)
       - [232. Implement Queue using Stacks](Leetcode/232.md)
+      - [341. Flatten Nested List Iterator](Leetcode/341.md)
       - [992. Subarrays with K Different Integers](Leetcode/992.md)
       - [1248. Count Number of Nice Subarrays](Leetcode/1248.md)
     - [Linked List](Leetcode/linkedlist.md)

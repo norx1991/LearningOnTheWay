@@ -82,6 +82,7 @@
       - [1192. Critical Connections in a Network](Leetcode/1192.md)
     - [Dynamic Programming/Backtrack](Leetcode/dp-backtrack.md)
       - [51. N-Queens](Leetcode/51.md)
+      - [72. Edit Distance](Leetcode/72.md)
       - [188. Best Time to Buy and Sell Stock IV](Leetcode/188.md)
       - [309. Best Time to Buy and Sell Stock with Cooldown](Leetcode/309.md)
       - [312. Burst Balloons](Leetcode/312.md)

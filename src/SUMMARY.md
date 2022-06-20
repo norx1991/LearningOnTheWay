@@ -76,6 +76,7 @@
       - [236. Lowest Common Ancestor of a Binary Tree](Leetcode/236.md)
       - [285. Inorder Successor in BST](Leetcode/285.md)
     - [Tree](Leetcode/tree.md)
+      - [820. Short Encoding of Words](Leetcode/820.md)  
       - [1707. Maximum XOR With an Element From Array](Leetcode/1707.md)
     - [Graph](Leetcode/graph.md)
       - [317. Shortest Distance from All Buildings](Leetcode/317.md)

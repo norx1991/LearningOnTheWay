@@ -1,5 +1,8 @@
+# Do not allow duplication in input
+### Backtrack
+
 ```python
-def subsets(nums):
+def subsets(nums: List[int]) -> List[List[int]]: 
     """
     :param nums: values to select from
     :return: all subsets
@@ -19,22 +22,50 @@ def subsets(nums):
 
     backtrack(0)
     return output
+```
 
-# Another method
-def subsets2(nums):
+### Simple Method
+
+```python
+def subsets2(nums: List[int]) -> List[List[int]]: 
     """
     :param nums: values to select from
     :return: all subsets
 
-    >>> print(subsets([1, 2, 3]))
+    >>> print(subsets2([1, 2, 3]))
     [[], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]]
     """
     res = [[]]
     for num in nums:
         res.extend([x + [num] for x in res])
     return res
+```
 
+### Method using bitmask
+```python
+def subsets3(nums: List[int]) -> List[List[int]]:
+    """
+    :param nums: values to select from
+    :return: all subsets
 
+    >>> print(subsets3([1, 2, 3]))
+    [[], [3], [2], [2, 3], [1], [1, 3], [1, 2], [1, 2, 3]]
+    """
+    n = len(nums)
+    output = []
+
+    for i in range(2 ** n, 2 ** (n + 1)):
+        # generate bitmask, from 0..00 to 1..11
+        bitmask = bin(i)[3:]
+
+        # append subset corresponding to that bitmask
+        output.append([nums[j] for j in range(n) if bitmask[j] == '1'])
+
+    return output
+```
+
+# Allow duplication in input
+```python
 def subsetsWithDup(nums):
     """
     :param nums: values to select from. Allow duplication

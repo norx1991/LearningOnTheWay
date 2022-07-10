@@ -104,6 +104,8 @@
       - [136. Single Number](Leetcode/136.md)
     - [Geometry](Leetcode/geometry.md)
       - [1401. Circle and Rectangle Overlapping](Leetcode/1401.md)
+    - [Multi-Threading](Leetcode/multithreading)
+      - [1242. Web Crawler Multithreaded](Leetcode/1242.md)
 
 # Casual
 

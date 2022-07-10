@@ -27,6 +27,7 @@
 
 # Linux
 
+# System Design
 
 # Interview
 - [Leetcode](Leetcode/README.md)
@@ -57,11 +58,15 @@
       - [992. Subarrays with K Different Integers](Leetcode/992.md)
       - [1235. Maximum Profit in Job Scheduling](Leetcode/1235.md)
       - [1248. Count Number of Nice Subarrays](Leetcode/1248.md)
+      - [1428. Leftmost Column with at Least a One](Leetcode/1428.md)
       - [1673. Find the Most Competitive Subsequence](Leetcode/1673.md)
+      - [1760. Minimum Limit of Balls in a Bag](Leetcode/1760.md)
       - [1738. Find Kth Largest XOR Coordinate Value](Leetcode/1738.md)
+      - [1776. Car Fleet II](Leetcode/1776.md)
     - [Linked List](Leetcode/linkedlist.md)
       - [21. Merge Two Sorted Lists](Leetcode/21.md)
       - [146. LRU Cache](Leetcode/146.md)
+      - [234. Palindrome Linked List](Leetcode/234.md)
       - [287. Find the Duplicate Number](Leetcode/287.md)
       - [460. LFU Cache](Leetcode/460.md)
       - [1650. Lowest Common Ancestor of a Binary Tree III](Leetcode/1650.md)
@@ -97,6 +102,8 @@
       - [1320. Minimum Distance to Type a Word Using Two Fingers](Leetcode/1320.md)
     - [Bit Manipulation](Leetcode/bit.md)
       - [136. Single Number](Leetcode/136.md)
+    - [Geometry](Leetcode/geometry.md)
+      - [1401. Circle and Rectangle Overlapping](Leetcode/1401.md)
 
 # Casual
 

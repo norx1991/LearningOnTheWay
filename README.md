@@ -1,3 +1,3 @@
 # LearningOnTheWay
 
-Find the documents [here](https://norx1991.github.io/LearningOnTheWay/)
+You can find the content [here](https://norx1991.github.io/LearningOnTheWay/).

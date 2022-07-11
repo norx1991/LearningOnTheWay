@@ -27,13 +27,20 @@
 
 # Linux
 
-# System Design
+
+
+# Software Design
+ - [System Design](System-Design/README.md)
+    - [Volcabulary](System-Design/vocabulary.md)
+    - [Common Algorithms](System-Design/algorithms.md)
+- [Database](Databases/README.md)
 
 # Interview
 - [Leetcode](Leetcode/README.md)
     - [Questions List](Leetcode/question-list.md)
     - [Frequently Used Python Functions](Leetcode/freq-Python.md)
     - [Frequently Used C++ Functions](Leetcode/freq-C++.md)
+    - [Question Series](Leetcode/series.md)
     - [Array](Leetcode/array.md)
       - [4. Median of Two Sorted Arrays](Leetcode/4.md)
       - [11. Container With Most Water](Leetcode/11.md)

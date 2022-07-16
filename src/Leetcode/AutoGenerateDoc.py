@@ -1,6 +1,9 @@
 import os
+from turtle import ScrolledCanvas
 
 questions = []
+
+os.chdir("./src/Leetcode")
 
 d = {}
 for line in open("question-list.md").readlines():

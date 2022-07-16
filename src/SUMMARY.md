@@ -30,10 +30,11 @@
 
 
 # Software Design
- - [System Design](System-Design/README.md)
+- [System Design](System-Design/README.md)
     - [Volcabulary](System-Design/vocabulary.md)
     - [Common Algorithms](System-Design/algorithms.md)
 - [Database](Databases/README.md)
+  - [Concepts](Databases/concepts.md)
 
 # Interview
 - [Leetcode](Leetcode/README.md)
@@ -74,6 +75,7 @@
       - [402. Remove K Digits](Leetcode/402.md)
       - [435. Non-overlapping Intervals](Leetcode/435.md)
       - [484. Find Permutation](Leetcode/484.md)
+      - [554. Brick Wall](Leetcode/554.md)
       - [658. Find K Closest Elements](Leetcode/658.md)
       - [670. Maximum Swap](Leetcode/670.md)
       - [696. Count Binary Substrings](Leetcode/696.md)

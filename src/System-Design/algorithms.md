@@ -13,3 +13,4 @@
 - [Two-Phase Commit]()
 - [Two-Phase Lock]()
 - [Gossip protocols]()
+- [Count-Min Sketch](https://florian.github.io/count-min-sketch/)

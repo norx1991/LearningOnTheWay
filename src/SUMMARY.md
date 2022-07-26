@@ -9,6 +9,7 @@
     - [Linked List](Algorithms/linkedlist.md)
     - [String/Expression](Algorithms/string.md)
     - [Binary Tree](Algorithms/binarytree.md)
+      - [Binary Index Tree](Algorithms/Binary%20Index%20Tree.md)
     - [Graph](Algorithms/graph.md)
     - [Dynamic Programming/Backtrack](Algorithms/dp-backtrack.md)
       - [Subsets](Algorithms/Subsets.md)
@@ -17,6 +18,8 @@
     - [Bit Manipulation](Algorithms/bit.md)
       - [Add without Plus](Algorithms/Add%20Without%20Plus.md)
     - [Geometry](Algorithms/geometry.md)
+    - [Math](Algorithms/math.md)
+      - [Greatest Common Divisor](Algorithms/Greatest%20Common%20Divisor.md)
 
 
 # Computer Networks
@@ -152,6 +155,7 @@
       - [489. Robot Room Cleaner](Leetcode/489.md)
       - [516. Longest Palindromic Subsequence](Leetcode/516.md)
       - [518. Coin Change 2](Leetcode/518.md)
+      - [629. K Inverse Pairs Array](Leetcode/629.md)
       - [698. Partition to K Equal Sum Subsets](Leetcode/698.md)
       - [714. Best Time to Buy and Sell Stock with Transaction Fee](Leetcode/714.md)
       - [718. Maximum Length of Repeated Subarray](Leetcode/718.md)

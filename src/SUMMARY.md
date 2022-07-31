@@ -124,6 +124,8 @@
       - [199. Binary Tree Right Side View](Leetcode/199.md)
       - [236. Lowest Common Ancestor of a Binary Tree](Leetcode/236.md)
       - [285. Inorder Successor in BST](Leetcode/285.md)
+      - [307. Range Sum Query - Mutable](Leetcode/307.md)
+      - [315. Count of Smaller Numbers After Self](Leetcode/315.md)
       - [437. Path Sum III](Leetcode/437.md)
       - [958. Check Completeness of a Binary Tree](Leetcode/958.md)
     - [Tree](Leetcode/tree.md)

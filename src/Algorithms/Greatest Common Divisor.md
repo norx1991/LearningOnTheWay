@@ -8,3 +8,9 @@
         a, b = b, a % b
     return a
 ```
+
+### The least common multiple can be found by the following
+```python
+def lcm(a, b):
+    return a * b // gcd(a, b)
+```

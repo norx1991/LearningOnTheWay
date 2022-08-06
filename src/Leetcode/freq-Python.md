@@ -43,7 +43,8 @@ insort_left(list, val)
 - float('inf')
 - divmod()
 - bin()
-- float. is_integer()
+- float.is_integer()
+- int.bit_length()
 
 # Useful Syntax
 

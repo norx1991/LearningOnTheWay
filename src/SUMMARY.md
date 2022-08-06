@@ -163,6 +163,7 @@
       - [714. Best Time to Buy and Sell Stock with Transaction Fee](Leetcode/714.md)
       - [718. Maximum Length of Repeated Subarray](Leetcode/718.md)
       - [740. Delete and Earn](Leetcode/740.md)
+      - [818. Race Car](Leetcode/818.md)
       - [1320. Minimum Distance to Type a Word Using Two Fingers](Leetcode/1320.md)
       - [1340. Jump Game V](Leetcode/1340.md)
       - [1799. Maximize Score After N Operations](Leetcode/1799.md)

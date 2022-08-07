@@ -140,6 +140,7 @@
       - [332. Reconstruct Itinerary](Leetcode/332.md)
       - [787. Cheapest Flights Within K Stops](Leetcode/787.md)
       - [847. Shortest Path Visiting All Nodes](Leetcode/847.md)
+      - [1293. Shortest Path in a Grid with Obstacles Elimination](Leetcode/1293.md)
       - [1192. Critical Connections in a Network](Leetcode/1192.md)
       - [1928. Minimum Cost to Reach Destination in Time](Leetcode/1928.md)
       - [2076. Process Restricted Friend Requests](Leetcode/2076.md)

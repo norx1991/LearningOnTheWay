@@ -26,13 +26,38 @@ import heapq
 
 # bisect
 
-bisect(list, val, low=0, high=len(list))
+import bisect
 
-bisect_left(list, val)
+- bisect(list, val, low=0, high=len(list))
+- bisect_left(list, val)
+- insort(list, val)
+- insort_left(list, val)
 
-insort(list, val)
+# binary search tree
+from sortedcontainers import SortedList (Similar to multiset in C++)
 
-insort_left(list, val)
+- add(val)
+- update(iterable)
+- discard(val)
+- remove(val)
+- pop(index=-1)
+- count(val)
+- index(val)
+- bisect_left(val)
+- bisect_right(val)
+
+from sortedcontainers import SortedDict
+
+- pop(key)
+- popitem(index=-1)
+- peekitem(index=- 1) (return (key, value) pair at index)
+  
+from sortedcontainers import SortedSet
+
+- add(val)
+- pop(index=-1)
+- remove(val)
+- discard(val)
 
 # Useful Functions
 - chr(97) = 'a'

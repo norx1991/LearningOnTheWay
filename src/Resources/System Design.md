@@ -81,3 +81,6 @@ Learn how to design large-scale systems. Prep for the system design interview. I
 **System Design Cheat Sheet**
 
 [gist.github.com/vasanthk/485d1c25737e8e72759f](https://gist.github.com/vasanthk/485d1c25737e8e72759f)
+
+* * *
+[Azure Cloud Architecture Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns)

@@ -1,9 +1,9 @@
-[Algorithms](Algorithms/README.md)
+[Algorithms](Algorithms/index.md)
 
-[Leetcode](Leetcode/README.md)
+[Leetcode](Leetcode/index.md)
 
-[System Design](System-Design/README.md)
+[System Design](System-Design/index.md)
 
-[Databases](Databases/README.md)
+[Databases](Databases/index.md)
 
-[Resources](Resources/README.md)
+[Resources](Resources/index.md)

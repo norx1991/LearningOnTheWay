@@ -188,6 +188,6 @@
 
 # Casual
 
-- [Resources](Book-Reading-Note/README.md)
+- [Resources](Resources/README.md)
   - [Github](Resources/Github%20Repos.md)
   - [System Design](Resources/System%20Design.md)

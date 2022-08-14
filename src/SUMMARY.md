@@ -1,6 +1,6 @@
 # Summary
-- [Introduction](README.md)
-- [Table of Content](toc.md)
+[Introduction](README.md)
+[Table of Content](toc.md)
 
 # Computer Science
 # Algorithms

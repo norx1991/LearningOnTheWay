@@ -1,6 +1,6 @@
 
 
-from [Designs, Lessons and Advice from Building Large Distributed Systems]https://www.cs.cornell.edu/projects/ladis2009/talks/dean-keynote-ladis2009.pdf
+These numbers are from [Designs, Lessons and Advice from Building Large Distributed Systems](https://www.cs.cornell.edu/projects/ladis2009/talks/dean-keynote-ladis2009.pdf)
 
 | Operation | Time |
 | --- | --- |

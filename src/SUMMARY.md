@@ -23,7 +23,8 @@
       - [Greatest Common Divisor](Algorithms/Greatest%20Common%20Divisor.md)
 
 
-# Computer Networks
+# Computer Network
+- [Computer Network](Computer-Network/README.md)
  - [Concepts](Computer-Network/concepts.md)
 
 # Operating System

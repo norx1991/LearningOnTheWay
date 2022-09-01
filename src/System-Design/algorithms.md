@@ -8,7 +8,7 @@
 - [Merkle Tree]()
 - [HyperLogLog]()
 - [Count-Min Sketch]()
-- [Hiereachical Timing Wheel]()
+- [Hierarchical Timing Wheel]()
 - [Operational Transformation]()
 - [Two-Phase Commit]()
 - [Two-Phase Lock]()

@@ -179,6 +179,7 @@
       - [29. Divide Two Integers](Leetcode/29.md)
       - [67. Add Binary](Leetcode/67.md)
       - [136. Single Number](Leetcode/136.md)
+      - [260. Single Number III](Leetcode/260.md)
     - [Geometry](Leetcode/geometry.md)
       - [1401. Circle and Rectangle Overlapping](Leetcode/1401.md)
     - [Multi-Threading](Leetcode/multithreading)

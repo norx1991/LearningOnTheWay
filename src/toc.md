@@ -4,7 +4,7 @@
 
 # Computer Science
 # Algorithms
-- [Data Structure & Algorithms](Algorithms/README.md)
+Data Structure & Algorithms
     - [Array](Algorithms/array.md)
     - [Linked List](Algorithms/linkedlist.md)
     - [String/Expression](Algorithms/string.md)
@@ -17,7 +17,7 @@
 
 
 # Computer Network
-- [Computer Network](Computer-Network/README.md)
+Computer Network
     - [Concepts](Computer-Network/concepts.md)
 
 # Operating System
@@ -28,16 +28,16 @@
 
 
 # Software Design
-- [System Design](System-Design/README.md)
+System Design
     - [Volcabulary](System-Design/vocabulary.md)
     - [Common Algorithms](System-Design/algorithms.md)
     - [Useful Numbers](System-Design/numbers.md)
     - [Common Questions](System-Design/common-questions.md)
-- [Database](Databases/README.md)
+Database
   - [Concepts](Databases/concepts.md)
 
 # Interview
-- [Leetcode](Leetcode/README.md)
+Leetcode
     - [Questions List](Leetcode/question-list.md)
     - [Frequently Used Python Functions](Leetcode/freq-Python.md)
     - [Frequently Used C++ Functions](Leetcode/freq-C++.md)
@@ -57,6 +57,6 @@
 
 # Casual
 
-- [Resources](Resources/README.md)
+Resources
   - [Github](Resources/Github%20Repos.md)
   - [System Design](Resources/System%20Design.md)

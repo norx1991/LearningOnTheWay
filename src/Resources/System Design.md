@@ -83,4 +83,9 @@ Learn how to design large-scale systems. Prep for the system design interview. I
 [gist.github.com/vasanthk/485d1c25737e8e72759f](https://gist.github.com/vasanthk/485d1c25737e8e72759f)
 
 * * *
+
+**Cloud Reference Architecture**
+
+[AWS Reference Architecture Diagrams](https://aws.amazon.com/architecture/reference-architecture-diagrams/?solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc&whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc&awsf.whitepapers-tech-category=*all&awsf.whitepapers-industries=*all)
+
 [Azure Cloud Architecture Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns)

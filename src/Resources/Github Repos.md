@@ -97,7 +97,7 @@ List of Data Science Cheatsheets to rule the world
 
 * * *
 
-### **Engineering Practices**
+**Engineering Practices**
 
 ### [google / eng-practices](https://github.com/google/eng-practices)
 
@@ -178,7 +178,6 @@ Demonstrate all the questions on LeetCode in the form of animation.（用动画�
 📓Solutions to Introduction to Algorithms
 
   
-
 ### trekhleb / javascript-algorithms
 
 📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings
@@ -193,7 +192,7 @@ Demonstrate all the questions on LeetCode in the form of animation.（用动画�
 
 * * *
 
-### **Learn Design Patterns**
+**Learn Design Patterns**
 
 ### [DovAmir / awesome-design-patterns](https://github.com/DovAmir/awesome-design-patterns)
 
@@ -217,7 +216,10 @@ Design patterns implemented in Java
 
 Questions to ask the company during your interview
 
-  
+### [awesome-interview-questions](https://github.com/DopplerHQ/awesome-interview-questions)
+
+A curated list of lists of technical interview questions.
+
 
 * * *
 
@@ -519,7 +521,7 @@ Create interesting games by pure python.
 
 * * *
 
-### **Projects**
+**Projects**
 
 ### [neozhaoliang / pywonderland](https://github.com/neozhaoliang/pywonderland)
 

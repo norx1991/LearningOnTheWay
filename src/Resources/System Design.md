@@ -42,11 +42,20 @@ System design interview for IT companies
 
 * * *
 
+**Grokking System Design**
+[Grokking System Design](https://github.com/Jeevan-kumar-Raj/Grokking-System-Design)
+
+* * *
+
 **System Design Primer**
 
 [donnemartin / system-design-primer](https://github.com/donnemartin/system-design-primer)
 
 Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.
+
+* * *
+
+[A Senior Engineer's Guide to the System Design Interview](https://interviewing.io/guides/system-design-interview)
 
 * * *
 

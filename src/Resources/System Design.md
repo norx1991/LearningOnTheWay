@@ -55,7 +55,13 @@ Learn how to design large-scale systems. Prep for the system design interview. I
 
 * * *
 
-[A Senior Engineer's Guide to the System Design Interview](https://interviewing.io/guides/system-design-interview)
+**ByteByteGo System Design 101**
+
+[ByteByteGoHq/system-design-101](https://github.com/ByteByteGoHq/system-design-101)
+
+* * *
+
+**[A Senior Engineer's Guide to the System Design Interview](https://interviewing.io/guides/system-design-interview)**
 
 * * *
 

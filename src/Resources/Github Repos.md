@@ -165,7 +165,18 @@ Minimal examples of data structures and algorithms in Python
 
 All Algorithms implemented in Python
 
+
+
+### [TheAlgorithms / C++](https://github.com/TheAlgorithms/C-Plus-Plus)
   
+All Algorithms implemented in C++
+
+
+
+### [TheAlgorithms](https://github.com/TheAlgorithms)
+All Algorithms implemented in different languages
+
+
 
 ### [MisterBooo / LeetCodeAnimation](https://github.com/MisterBooo/LeetCodeAnimation)
 

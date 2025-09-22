@@ -108,6 +108,11 @@ char *pBuffer = new char[1024]
 delete[] pBuffer
 ```
 
+```c++
+// A 3x4 2D vector of integers, all initialized to 0
+std::vector<std::vector<int>> matrix(nrows, std::vector<int>(ncols, 0));
+```
+
 # Algorithms
 - swap(T& a, T& b)
 - max(T& a, T& b)

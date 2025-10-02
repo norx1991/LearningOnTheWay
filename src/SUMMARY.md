@@ -135,6 +135,7 @@
     - [437. Path Sum III](Leetcode/437.md)
     - [958. Check Completeness of a Binary Tree](Leetcode/958.md)
   - [Tree](Leetcode/tree.md)
+    - [124. Binary Tree Maximum Path Sum](Leetcode/124.md)
     - [140. Word Break II](Leetcode/140.md)
     - [212. Word Search II](Leetcode/212.md)
     - [729. My Calendar I](Leetcode/729.md)

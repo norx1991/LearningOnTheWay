@@ -44,7 +44,7 @@ def permuteUnique(nums):
             output.append(nums[:])
             return
 
-        seen = set()  # It is also possible to use a counter
+        seen = set()
         for i in range(start, len(nums)):
             if nums[i] in seen:
                 continue
@@ -56,4 +56,27 @@ def permuteUnique(nums):
 
     backtrack(0)
     return output
+
+
+# Another approach with Counter
+def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+    from collections import Counter
+    ct = Counter(nums)
+    res = []
+
+    def backtrack(cur, counter):
+        if len(cur) == len(nums):
+            res.append(cur[:])
+            return
+        for c, count in counter.items():
+            if count == 0:
+                continue
+            cur.append(c)
+            counter[c] -= 1
+            backtrack(cur, counter)
+            counter[c] += 1
+            cur.pop()
+
+    backtrack([], ct)
+    return res
 ```

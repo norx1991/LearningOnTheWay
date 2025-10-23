@@ -1,0 +1,487 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Github - Learning On the Way</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="../toc.html">Table of Content</a></li><li class="chapter-item expanded affix "><li class="part-title">Computer Science</li><li class="chapter-item expanded affix "><li class="part-title">Algorithms</li><li class="chapter-item expanded "><a href="../Algorithms/index.html"><strong aria-hidden="true">1.</strong> Data Structure &amp; Algorithms</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Algorithms/array.html"><strong aria-hidden="true">1.1.</strong> Array</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Algorithms/Find Kth Smallest in Two Sorted Arrays.html"><strong aria-hidden="true">1.1.1.</strong> Find Kth Smallest in Two Sorted Arrays</a></li></ol></li><li class="chapter-item expanded "><a href="../Algorithms/linkedlist.html"><strong aria-hidden="true">1.2.</strong> Linked List</a></li><li class="chapter-item expanded "><a href="../Algorithms/string.html"><strong aria-hidden="true">1.3.</strong> String/Expression</a></li><li class="chapter-item expanded "><a href="../Algorithms/binarytree.html"><strong aria-hidden="true">1.4.</strong> Binary Tree</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Algorithms/Binary Index Tree.html"><strong aria-hidden="true">1.4.1.</strong> Binary Index Tree</a></li></ol></li><li class="chapter-item expanded "><a href="../Algorithms/graph.html"><strong aria-hidden="true">1.5.</strong> Graph</a></li><li class="chapter-item expanded "><a href="../Algorithms/dp-backtrack.html"><strong aria-hidden="true">1.6.</strong> Dynamic Programming/Backtrack</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Algorithms/Subsets.html"><strong aria-hidden="true">1.6.1.</strong> Subsets</a></li><li class="chapter-item expanded "><a href="../Algorithms/Combinations.html"><strong aria-hidden="true">1.6.2.</strong> Combinations</a></li><li class="chapter-item expanded "><a href="../Algorithms/Permutations.html"><strong aria-hidden="true">1.6.3.</strong> Permutations</a></li></ol></li><li class="chapter-item expanded "><a href="../Algorithms/bit.html"><strong aria-hidden="true">1.7.</strong> Bit Manipulation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Algorithms/Add Without Plus.html"><strong aria-hidden="true">1.7.1.</strong> Add without Plus</a></li></ol></li><li class="chapter-item expanded "><a href="../Algorithms/geometry.html"><strong aria-hidden="true">1.8.</strong> Geometry</a></li><li class="chapter-item expanded "><a href="../Algorithms/math.html"><strong aria-hidden="true">1.9.</strong> Math</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Algorithms/Greatest Common Divisor.html"><strong aria-hidden="true">1.9.1.</strong> Greatest Common Divisor</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Computer Network</li><li class="chapter-item expanded "><a href="../Computer-Network/index.html"><strong aria-hidden="true">2.</strong> Computer Network</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Computer-Network/concepts.html"><strong aria-hidden="true">2.1.</strong> Concepts</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Operating System</li><li class="chapter-item expanded affix "><li class="part-title">Linux</li><li class="chapter-item expanded affix "><li class="part-title">Software Design</li><li class="chapter-item expanded "><a href="../System-Design/index.html"><strong aria-hidden="true">3.</strong> System Design</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../System-Design/vocabulary.html"><strong aria-hidden="true">3.1.</strong> Volcabulary</a></li><li class="chapter-item expanded "><a href="../System-Design/algorithms.html"><strong aria-hidden="true">3.2.</strong> Common Algorithms</a></li><li class="chapter-item expanded "><a href="../System-Design/numbers.html"><strong aria-hidden="true">3.3.</strong> Useful Numbers</a></li><li class="chapter-item expanded "><a href="../System-Design/common-questions.html"><strong aria-hidden="true">3.4.</strong> Common Questions</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../System-Design/notification-system.html"><strong aria-hidden="true">3.4.1.</strong> Notification System</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../Databases/index.html"><strong aria-hidden="true">4.</strong> Database</a></li><li class="chapter-item expanded "><a href="../Databases/concepts.html"><strong aria-hidden="true">5.</strong> Concepts</a></li><li class="chapter-item expanded affix "><li class="part-title">Interview</li><li class="chapter-item expanded "><a href="../Leetcode/index.html"><strong aria-hidden="true">6.</strong> Leetcode</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/question-list.html"><strong aria-hidden="true">6.1.</strong> Questions List</a></li><li class="chapter-item expanded "><a href="../Leetcode/freq-Python.html"><strong aria-hidden="true">6.2.</strong> Frequently Used Python Functions</a></li><li class="chapter-item expanded "><a href="../Leetcode/freq-C++.html"><strong aria-hidden="true">6.3.</strong> Frequently Used C++ Functions</a></li><li class="chapter-item expanded "><a href="../Leetcode/series.html"><strong aria-hidden="true">6.4.</strong> Question Series</a></li><li class="chapter-item expanded "><a href="../Leetcode/array.html"><strong aria-hidden="true">6.5.</strong> Array</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/4.html"><strong aria-hidden="true">6.5.1.</strong> Median of Two Sorted Arrays</a></li><li class="chapter-item expanded "><a href="../Leetcode/11.html"><strong aria-hidden="true">6.5.2.</strong> Container With Most Water</a></li><li class="chapter-item expanded "><a href="../Leetcode/18.html"><strong aria-hidden="true">6.5.3.</strong> 4Sum</a></li><li class="chapter-item expanded "><a href="../Leetcode/22.html"><strong aria-hidden="true">6.5.4.</strong> Generate Parentheses</a></li><li class="chapter-item expanded "><a href="../Leetcode/32.html"><strong aria-hidden="true">6.5.5.</strong> Longest Valid Parentheses</a></li><li class="chapter-item expanded "><a href="../Leetcode/33.html"><strong aria-hidden="true">6.5.6.</strong> Search in Rotated Sorted Array</a></li><li class="chapter-item expanded "><a href="../Leetcode/53.html"><strong aria-hidden="true">6.5.7.</strong> Maximum Subarray (Kadane's Algorithm)</a></li><li class="chapter-item expanded "><a href="../Leetcode/55.html"><strong aria-hidden="true">6.5.8.</strong> Jump Game</a></li><li class="chapter-item expanded "><a href="../Leetcode/75.html"><strong aria-hidden="true">6.5.9.</strong> Sort Colors</a></li><li class="chapter-item expanded "><a href="../Leetcode/81.html"><strong aria-hidden="true">6.5.10.</strong> Search in Rotated Sorted Array II</a></li><li class="chapter-item expanded "><a href="../Leetcode/84.html"><strong aria-hidden="true">6.5.11.</strong> Largest Rectangle in Histogram</a></li><li class="chapter-item expanded "><a href="../Leetcode/88.html"><strong aria-hidden="true">6.5.12.</strong> Merge Sorted Array (in place)</a></li><li class="chapter-item expanded "><a href="../Leetcode/128.html"><strong aria-hidden="true">6.5.13.</strong> Longest Consecutive Sequence</a></li><li class="chapter-item expanded "><a href="../Leetcode/135.html"><strong aria-hidden="true">6.5.14.</strong> Candy</a></li><li class="chapter-item expanded "><a href="../Leetcode/152.html"><strong aria-hidden="true">6.5.15.</strong> Maximum Product Subarray</a></li><li class="chapter-item expanded "><a href="../Leetcode/162.html"><strong aria-hidden="true">6.5.16.</strong> Find Peak Element</a></li><li class="chapter-item expanded "><a href="../Leetcode/167.html"><strong aria-hidden="true">6.5.17.</strong> Two Sum II - Input Array Is Sorted</a></li><li class="chapter-item expanded "><a href="../Leetcode/215.html"><strong aria-hidden="true">6.5.18.</strong> Kth Largest Element in an Array</a></li><li class="chapter-item expanded "><a href="../Leetcode/225.html"><strong aria-hidden="true">6.5.19.</strong> Implement Stack using Queues</a></li><li class="chapter-item expanded "><a href="../Leetcode/232.html"><strong aria-hidden="true">6.5.20.</strong> Implement Queue using Stacks</a></li><li class="chapter-item expanded "><a href="../Leetcode/239.html"><strong aria-hidden="true">6.5.21.</strong> Sliding Window Maximum</a></li><li class="chapter-item expanded "><a href="../Leetcode/295.html"><strong aria-hidden="true">6.5.22.</strong> Find Median from Data Stream</a></li><li class="chapter-item expanded "><a href="../Leetcode/300.html"><strong aria-hidden="true">6.5.23.</strong> Longest Increasing Subsequence</a></li><li class="chapter-item expanded "><a href="../Leetcode/301.html"><strong aria-hidden="true">6.5.24.</strong> Remove Invalid Parentheses</a></li><li class="chapter-item expanded "><a href="../Leetcode/315.html"><strong aria-hidden="true">6.5.25.</strong> Count of Smaller Numbers After Self</a></li><li class="chapter-item expanded "><a href="../Leetcode/316.html"><strong aria-hidden="true">6.5.26.</strong> Remove Duplicate Letters</a></li><li class="chapter-item expanded "><a href="../Leetcode/341.html"><strong aria-hidden="true">6.5.27.</strong> Flatten Nested List Iterator</a></li><li class="chapter-item expanded "><a href="../Leetcode/347.html"><strong aria-hidden="true">6.5.28.</strong> Top K Frequent Elements</a></li><li class="chapter-item expanded "><a href="../Leetcode/363.html"><strong aria-hidden="true">6.5.29.</strong> Max Sum of Rectangle No Larger Than K</a></li><li class="chapter-item expanded "><a href="../Leetcode/402.html"><strong aria-hidden="true">6.5.30.</strong> Remove K Digits</a></li><li class="chapter-item expanded "><a href="../Leetcode/435.html"><strong aria-hidden="true">6.5.31.</strong> Non-overlapping Intervals</a></li><li class="chapter-item expanded "><a href="../Leetcode/484.html"><strong aria-hidden="true">6.5.32.</strong> Find Permutation</a></li><li class="chapter-item expanded "><a href="../Leetcode/554.html"><strong aria-hidden="true">6.5.33.</strong> Brick Wall</a></li><li class="chapter-item expanded "><a href="../Leetcode/658.html"><strong aria-hidden="true">6.5.34.</strong> Find K Closest Elements</a></li><li class="chapter-item expanded "><a href="../Leetcode/670.html"><strong aria-hidden="true">6.5.35.</strong> Maximum Swap</a></li><li class="chapter-item expanded "><a href="../Leetcode/696.html"><strong aria-hidden="true">6.5.36.</strong> Count Binary Substrings</a></li><li class="chapter-item expanded "><a href="../Leetcode/895.html"><strong aria-hidden="true">6.5.37.</strong> Maximum Frequency Stack</a></li><li class="chapter-item expanded "><a href="../Leetcode/992.html"><strong aria-hidden="true">6.5.38.</strong> Subarrays with K Different Integers</a></li><li class="chapter-item expanded "><a href="../Leetcode/1004.html"><strong aria-hidden="true">6.5.39.</strong> Max Consecutive Ones III</a></li><li class="chapter-item expanded "><a href="../Leetcode/1235.html"><strong aria-hidden="true">6.5.40.</strong> Maximum Profit in Job Scheduling</a></li><li class="chapter-item expanded "><a href="../Leetcode/1248.html"><strong aria-hidden="true">6.5.41.</strong> Count Number of Nice Subarrays</a></li><li class="chapter-item expanded "><a href="../Leetcode/1286.html"><strong aria-hidden="true">6.5.42.</strong> Iterator for Combination</a></li><li class="chapter-item expanded "><a href="../Leetcode/1288.html"><strong aria-hidden="true">6.5.43.</strong> Remove Covered Intervals</a></li><li class="chapter-item expanded "><a href="../Leetcode/1428.html"><strong aria-hidden="true">6.5.44.</strong> Leftmost Column with at Least a One</a></li><li class="chapter-item expanded "><a href="../Leetcode/1673.html"><strong aria-hidden="true">6.5.45.</strong> Find the Most Competitive Subsequence</a></li><li class="chapter-item expanded "><a href="../Leetcode/1696.html"><strong aria-hidden="true">6.5.46.</strong> Jump Game VI</a></li><li class="chapter-item expanded "><a href="../Leetcode/1760.html"><strong aria-hidden="true">6.5.47.</strong> Minimum Limit of Balls in a Bag</a></li><li class="chapter-item expanded "><a href="../Leetcode/1738.html"><strong aria-hidden="true">6.5.48.</strong> Find Kth Largest XOR Coordinate Value</a></li><li class="chapter-item expanded "><a href="../Leetcode/1776.html"><strong aria-hidden="true">6.5.49.</strong> Car Fleet II</a></li><li class="chapter-item expanded "><a href="../Leetcode/1871.html"><strong aria-hidden="true">6.5.50.</strong> Jump Game VII</a></li><li class="chapter-item expanded "><a href="../Leetcode/1944.html"><strong aria-hidden="true">6.5.51.</strong> Number of Visible People in a Queue</a></li></ol></li><li class="chapter-item expanded "><a href="../Leetcode/linkedlist.html"><strong aria-hidden="true">6.6.</strong> Linked List</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/21.html"><strong aria-hidden="true">6.6.1.</strong> Merge Two Sorted Lists</a></li><li class="chapter-item expanded "><a href="../Leetcode/143.html"><strong aria-hidden="true">6.6.2.</strong> Reorder List</a></li><li class="chapter-item expanded "><a href="../Leetcode/146.html"><strong aria-hidden="true">6.6.3.</strong> LRU Cache</a></li><li class="chapter-item expanded "><a href="../Leetcode/160.html"><strong aria-hidden="true">6.6.4.</strong> Intersection of Two Linked Lists</a></li><li class="chapter-item expanded "><a href="../Leetcode/234.html"><strong aria-hidden="true">6.6.5.</strong> Palindrome Linked List</a></li><li class="chapter-item expanded "><a href="../Leetcode/287.html"><strong aria-hidden="true">6.6.6.</strong> Find the Duplicate Number</a></li><li class="chapter-item expanded "><a href="../Leetcode/460.html"><strong aria-hidden="true">6.6.7.</strong> LFU Cache</a></li><li class="chapter-item expanded "><a href="../Leetcode/1650.html"><strong aria-hidden="true">6.6.8.</strong> Lowest Common Ancestor of a Binary Tree III</a></li></ol></li><li class="chapter-item expanded "><a href="../Leetcode/priorityqueue.html"><strong aria-hidden="true">6.7.</strong> Priority Queue</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/703.html"><strong aria-hidden="true">6.7.1.</strong> Kth Largest Element in a Stream</a></li><li class="chapter-item expanded "><a href="../Leetcode/778.html"><strong aria-hidden="true">6.7.2.</strong> Swim in Rising Water</a></li><li class="chapter-item expanded "><a href="../Leetcode/2158.html"><strong aria-hidden="true">6.7.3.</strong> Amount of New Area Painted Each Day</a></li></ol></li><li class="chapter-item expanded "><a href="../Leetcode/string.html"><strong aria-hidden="true">6.8.</strong> String/Expression</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/10.html"><strong aria-hidden="true">6.8.1.</strong> Regular Expression Matching</a></li><li class="chapter-item expanded "><a href="../Leetcode/76.html"><strong aria-hidden="true">6.8.2.</strong> Minimum Window Substring</a></li><li class="chapter-item expanded "><a href="../Leetcode/132.html"><strong aria-hidden="true">6.8.3.</strong> Palindrome Partitioning II</a></li><li class="chapter-item expanded "><a href="../Leetcode/224.html"><strong aria-hidden="true">6.8.4.</strong> Basic Calculator I</a></li><li class="chapter-item expanded "><a href="../Leetcode/227.html"><strong aria-hidden="true">6.8.5.</strong> Basic Calculator II</a></li><li class="chapter-item expanded "><a href="../Leetcode/420.html"><strong aria-hidden="true">6.8.6.</strong> Strong Password Checker</a></li><li class="chapter-item expanded "><a href="../Leetcode/772.html"><strong aria-hidden="true">6.8.7.</strong> Basic Calculator III</a></li><li class="chapter-item expanded "><a href="../Leetcode/1597.html"><strong aria-hidden="true">6.8.8.</strong> Build Binary Expression Tree From Infix Expression</a></li><li class="chapter-item expanded "><a href="../Leetcode/2060.html"><strong aria-hidden="true">6.8.9.</strong> Check if an Original String Exists Given Two Encoded Strings</a></li></ol></li><li class="chapter-item expanded "><a href="../Leetcode/binarytree.html"><strong aria-hidden="true">6.9.</strong> Binary Tree</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/99.html"><strong aria-hidden="true">6.9.1.</strong> Recover Binary Search Tree</a></li><li class="chapter-item expanded "><a href="../Leetcode/124.html"><strong aria-hidden="true">6.9.2.</strong> Binary Tree Maximum Path Sum</a></li><li class="chapter-item expanded "><a href="../Leetcode/199.html"><strong aria-hidden="true">6.9.3.</strong> Binary Tree Right Side View</a></li><li class="chapter-item expanded "><a href="../Leetcode/236.html"><strong aria-hidden="true">6.9.4.</strong> Lowest Common Ancestor of a Binary Tree</a></li><li class="chapter-item expanded "><a href="../Leetcode/285.html"><strong aria-hidden="true">6.9.5.</strong> Inorder Successor in BST</a></li><li class="chapter-item expanded "><a href="../Leetcode/307.html"><strong aria-hidden="true">6.9.6.</strong> Range Sum Query - Mutable</a></li><li class="chapter-item expanded "><a href="../Leetcode/315.html"><strong aria-hidden="true">6.9.7.</strong> Count of Smaller Numbers After Self</a></li><li class="chapter-item expanded "><a href="../Leetcode/437.html"><strong aria-hidden="true">6.9.8.</strong> Path Sum III</a></li><li class="chapter-item expanded "><a href="../Leetcode/958.html"><strong aria-hidden="true">6.9.9.</strong> Check Completeness of a Binary Tree</a></li></ol></li><li class="chapter-item expanded "><a href="../Leetcode/tree.html"><strong aria-hidden="true">6.10.</strong> Tree</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/140.html"><strong aria-hidden="true">6.10.1.</strong> Word Break II</a></li><li class="chapter-item expanded "><a href="../Leetcode/212.html"><strong aria-hidden="true">6.10.2.</strong> Word Search II</a></li><li class="chapter-item expanded "><a href="../Leetcode/729.html"><strong aria-hidden="true">6.10.3.</strong> My Calendar I</a></li><li class="chapter-item expanded "><a href="../Leetcode/820.html"><strong aria-hidden="true">6.10.4.</strong> Short Encoding of Words</a></li><li class="chapter-item expanded "><a href="../Leetcode/1707.html"><strong aria-hidden="true">6.10.5.</strong> Maximum XOR With an Element From Array</a></li><li class="chapter-item expanded "><a href="../Leetcode/2034.html"><strong aria-hidden="true">6.10.6.</strong> Stock Price Fluctuation </a></li></ol></li><li class="chapter-item expanded "><a href="../Leetcode/graph.html"><strong aria-hidden="true">6.11.</strong> Graph</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/210.html"><strong aria-hidden="true">6.11.1.</strong> Course Schedule II</a></li><li class="chapter-item expanded "><a href="../Leetcode/317.html"><strong aria-hidden="true">6.11.2.</strong> Shortest Distance from All Buildings</a></li><li class="chapter-item expanded "><a href="../Leetcode/332.html"><strong aria-hidden="true">6.11.3.</strong> Reconstruct Itinerary</a></li><li class="chapter-item expanded "><a href="../Leetcode/787.html"><strong aria-hidden="true">6.11.4.</strong> Cheapest Flights Within K Stops</a></li><li class="chapter-item expanded "><a href="../Leetcode/847.html"><strong aria-hidden="true">6.11.5.</strong> Shortest Path Visiting All Nodes</a></li><li class="chapter-item expanded "><a href="../Leetcode/1293.html"><strong aria-hidden="true">6.11.6.</strong> Shortest Path in a Grid with Obstacles Elimination</a></li><li class="chapter-item expanded "><a href="../Leetcode/1192.html"><strong aria-hidden="true">6.11.7.</strong> Critical Connections in a Network</a></li><li class="chapter-item expanded "><a href="../Leetcode/1928.html"><strong aria-hidden="true">6.11.8.</strong> Minimum Cost to Reach Destination in Time</a></li><li class="chapter-item expanded "><a href="../Leetcode/2076.html"><strong aria-hidden="true">6.11.9.</strong> Process Restricted Friend Requests</a></li></ol></li><li class="chapter-item expanded "><a href="../Leetcode/dp-backtrack.html"><strong aria-hidden="true">6.12.</strong> Dynamic Programming/Backtrack</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/39.html"><strong aria-hidden="true">6.12.1.</strong> Combination Sum</a></li><li class="chapter-item expanded "><a href="../Leetcode/51.html"><strong aria-hidden="true">6.12.2.</strong> N-Queens</a></li><li class="chapter-item expanded "><a href="../Leetcode/72.html"><strong aria-hidden="true">6.12.3.</strong> Edit Distance</a></li><li class="chapter-item expanded "><a href="../Leetcode/78.html"><strong aria-hidden="true">6.12.4.</strong> Subsets</a></li><li class="chapter-item expanded "><a href="../Leetcode/97.html"><strong aria-hidden="true">6.12.5.</strong> Interleaving String</a></li><li class="chapter-item expanded "><a href="../Leetcode/188.html"><strong aria-hidden="true">6.12.6.</strong> Best Time to Buy and Sell Stock IV</a></li><li class="chapter-item expanded "><a href="../Leetcode/282.html"><strong aria-hidden="true">6.12.7.</strong> Expression Add Operators</a></li><li class="chapter-item expanded "><a href="../Leetcode/309.html"><strong aria-hidden="true">6.12.8.</strong> Best Time to Buy and Sell Stock with Cooldown</a></li><li class="chapter-item expanded "><a href="../Leetcode/312.html"><strong aria-hidden="true">6.12.9.</strong> Burst Balloons</a></li><li class="chapter-item expanded "><a href="../Leetcode/322.html"><strong aria-hidden="true">6.12.10.</strong> Coin Change</a></li><li class="chapter-item expanded "><a href="../Leetcode/410.html"><strong aria-hidden="true">6.12.11.</strong> Split Array Largest Sum</a></li><li class="chapter-item expanded "><a href="../Leetcode/489.html"><strong aria-hidden="true">6.12.12.</strong> Robot Room Cleaner</a></li><li class="chapter-item expanded "><a href="../Leetcode/516.html"><strong aria-hidden="true">6.12.13.</strong> Longest Palindromic Subsequence</a></li><li class="chapter-item expanded "><a href="../Leetcode/518.html"><strong aria-hidden="true">6.12.14.</strong> Coin Change 2</a></li><li class="chapter-item expanded "><a href="../Leetcode/629.html"><strong aria-hidden="true">6.12.15.</strong> K Inverse Pairs Array</a></li><li class="chapter-item expanded "><a href="../Leetcode/698.html"><strong aria-hidden="true">6.12.16.</strong> Partition to K Equal Sum Subsets</a></li><li class="chapter-item expanded "><a href="../Leetcode/714.html"><strong aria-hidden="true">6.12.17.</strong> Best Time to Buy and Sell Stock with Transaction Fee</a></li><li class="chapter-item expanded "><a href="../Leetcode/718.html"><strong aria-hidden="true">6.12.18.</strong> Maximum Length of Repeated Subarray</a></li><li class="chapter-item expanded "><a href="../Leetcode/740.html"><strong aria-hidden="true">6.12.19.</strong> Delete and Earn</a></li><li class="chapter-item expanded "><a href="../Leetcode/818.html"><strong aria-hidden="true">6.12.20.</strong> Race Car</a></li><li class="chapter-item expanded "><a href="../Leetcode/1320.html"><strong aria-hidden="true">6.12.21.</strong> Minimum Distance to Type a Word Using Two Fingers</a></li><li class="chapter-item expanded "><a href="../Leetcode/1340.html"><strong aria-hidden="true">6.12.22.</strong> Jump Game V</a></li><li class="chapter-item expanded "><a href="../Leetcode/1799.html"><strong aria-hidden="true">6.12.23.</strong> Maximize Score After N Operations</a></li><li class="chapter-item expanded "><a href="../Leetcode/1931.html"><strong aria-hidden="true">6.12.24.</strong> Painting a Grid With Three Different Colors</a></li><li class="chapter-item expanded "><a href="../Leetcode/1937.html"><strong aria-hidden="true">6.12.25.</strong> Maximum Number of Points with Cost</a></li><li class="chapter-item expanded "><a href="../Leetcode/1997.html"><strong aria-hidden="true">6.12.26.</strong> First Day Where You Have Been in All the Rooms</a></li></ol></li><li class="chapter-item expanded "><a href="../Leetcode/bit.html"><strong aria-hidden="true">6.13.</strong> Bit Manipulation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/29.html"><strong aria-hidden="true">6.13.1.</strong> Divide Two Integers</a></li><li class="chapter-item expanded "><a href="../Leetcode/67.html"><strong aria-hidden="true">6.13.2.</strong> Add Binary</a></li><li class="chapter-item expanded "><a href="../Leetcode/136.html"><strong aria-hidden="true">6.13.3.</strong> Single Number</a></li><li class="chapter-item expanded "><a href="../Leetcode/137.html"><strong aria-hidden="true">6.13.4.</strong> Single Number II</a></li><li class="chapter-item expanded "><a href="../Leetcode/260.html"><strong aria-hidden="true">6.13.5.</strong> Single Number III</a></li></ol></li><li class="chapter-item expanded "><a href="../Leetcode/geometry.html"><strong aria-hidden="true">6.14.</strong> Geometry</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/1401.html"><strong aria-hidden="true">6.14.1.</strong> Circle and Rectangle Overlapping</a></li></ol></li><li class="chapter-item expanded "><a href="../Leetcode/multithreading.html"><strong aria-hidden="true">6.15.</strong> Multi-Threading</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/1242.html"><strong aria-hidden="true">6.15.1.</strong> Web Crawler Multithreaded</a></li></ol></li><li class="chapter-item expanded "><a href="../Leetcode/others.html"><strong aria-hidden="true">6.16.</strong> Others</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Leetcode/398.html"><strong aria-hidden="true">6.16.1.</strong> Random Pick Index</a></li><li class="chapter-item expanded "><a href="../Leetcode/587.html"><strong aria-hidden="true">6.16.2.</strong> Erect the Fence</a></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Casual</li><li class="chapter-item expanded "><a href="../Resources/index.html"><strong aria-hidden="true">7.</strong> Resources</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Resources/Github Repos.html" class="active"><strong aria-hidden="true">7.1.</strong> Github</a></li><li class="chapter-item expanded "><a href="../Resources/System Design.html"><strong aria-hidden="true">7.2.</strong> System Design</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Learning On the Way</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="github-useful-repos"><a class="header" href="#github-useful-repos">GitHub Useful Repos</a></h1>
+<p>===================</p>
+<p><a href="https://github.com/search?o=desc&amp;q=stars%3A%3E100000&amp;s=stars&amp;type=Repositories">Most Starred List</a></p>
+<p><strong>CS Learning Materials</strong></p>
+<h3 id="doocs--technical-books"><a class="header" href="#doocs--technical-books"><a href="https://github.com/doocs/technical-books">doocs / technical-books</a></a></h3>
+<p>😆 国内外互联网技术大牛们都写了哪些书籍：计算机基础、网络、前端、后端、数据库、架构、大数据、深度学习...</p>
+<h3 id="developer-y--cs-video-course"><a class="header" href="#developer-y--cs-video-course"><a href="https://github.com/Developer-Y/cs-video-courses">Developer-Y / cs-video-course</a></a></h3>
+<p>List of Computer Science courses with video lectures.</p>
+<h3 id="sdmg15--best-websites-a-programmer-should-visit"><a class="header" href="#sdmg15--best-websites-a-programmer-should-visit"><a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit">sdmg15 / Best-websites-a-programmer-should-visit</a></a></h3>
+<p>🔗 Some useful websites for programmers.</p>
+<h3 id="ossu--computer-science"><a class="header" href="#ossu--computer-science"><a href="https://github.com/ossu/computer-science">ossu / computer-science</a></a></h3>
+<p>🎓 Path to a free self-taught education in Computer Science!</p>
+<h3 id="freecodecamp--freecodecamp"><a class="header" href="#freecodecamp--freecodecamp"><a href="https://github.com/freeCodeCamp/freeCodeCamp">freeCodeCamp / freeCodeCamp</a></a></h3>
+<p><a href="http://freeCodeCamp.org">freeCodeCamp.org</a>'s open-source codebase and curriculum. Learn to code for free.</p>
+<h3 id="cyc2018--cs-notes"><a class="header" href="#cyc2018--cs-notes"><a href="https://github.com/CyC2018/CS-Notes">CyC2018 / CS-Notes</a></a></h3>
+<p>📚 技术面试必备基础知识、Leetcode、计算机操作系统、计算机网络、系统设计</p>
+<h3 id="bregman-arie--devops-exercises"><a class="header" href="#bregman-arie--devops-exercises"><a href="https://github.com/bregman-arie/devops-exercises">bregman-arie / devops-exercises</a></a></h3>
+<p>Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions</p>
+<h3 id="ebookfoundation--free-programming-books"><a class="header" href="#ebookfoundation--free-programming-books"><a href="https://github.com/EbookFoundation/free-programming-books">EbookFoundation / free-programming-books</a></a></h3>
+<p>📚 Freely available programming books</p>
+<h3 id="kamranahmedse--developer-roadmap"><a class="header" href="#kamranahmedse--developer-roadmap"><a href="https://github.com/kamranahmedse/developer-roadmap">kamranahmedse / developer-roadmap</a></a></h3>
+<p>Roadmap to becoming a web developer in 2021</p>
+<h3 id="jwasham--coding-interview-university"><a class="header" href="#jwasham--coding-interview-university"><a href="https://github.com/jwasham/coding-interview-university">jwasham / coding-interview-university</a></a></h3>
+<p>A complete computer science study plan to become a software engineer.</p>
+<h3 id="imarvinle--awesome-cs-books"><a class="header" href="#imarvinle--awesome-cs-books"><a href="https://github.com/imarvinle/awesome-cs-books">imarvinle / awesome-cs-books</a></a></h3>
+<p>经典编程书籍大全，涵盖：计算机系统与网络、系统架构、算法与数据结构、前端开发、后端开发、移动开发、数据库、测试、项目与团队、程序员职业修炼、求职面试等</p>
+<hr />
+<p><strong>Cheat Sheets</strong></p>
+<h3 id="lecoupa--awesome-cheatsheets"><a class="header" href="#lecoupa--awesome-cheatsheets"><a href="https://github.com/LeCoupa/awesome-cheatsheets">LeCoupa / awesome-cheatsheets</a></a></h3>
+<p>👩‍💻👨‍💻 Awesome cheatsheets for popular programming languages, frameworks and development tools. They include everything you should know in one single file.</p>
+<h3 id="ikatyang--emoji-cheat-sheet"><a class="header" href="#ikatyang--emoji-cheat-sheet"><a href="https://github.com/ikatyang/emoji-cheat-sheet">ikatyang / emoji-cheat-sheet</a></a></h3>
+<p>A markdown version emoji cheat sheet</p>
+<h3 id="faviovazquez--ds-cheatsheets"><a class="header" href="#faviovazquez--ds-cheatsheets"><a href="https://github.com/FavioVazquez/ds-cheatsheets">FavioVazquez / ds-cheatsheets</a></a></h3>
+<p>List of Data Science Cheatsheets to rule the world</p>
+<hr />
+<p><strong>Engineering Practices</strong></p>
+<h3 id="google--eng-practices"><a class="header" href="#google--eng-practices"><a href="https://github.com/google/eng-practices">google / eng-practices</a></a></h3>
+<p>Google's Engineering Practices documentation</p>
+<hr />
+<p><strong>Front End, Back End, Full Stack</strong></p>
+<h3 id="microsoft--web-dev-for-beginners"><a class="header" href="#microsoft--web-dev-for-beginners"><a href="https://github.com/microsoft/Web-Dev-For-Beginners">microsoft / Web-Dev-For-Beginners</a></a></h3>
+<p>24 Lessons, 12 Weeks, Get Started as a Web Developer</p>
+<p><a href="https://github.com/frank-lam/fullstack-tutorial">frank-lam / fullstack-tutorial</a></p>
+<p>🚀 fullstack tutorial 2021，后台技术栈/架构师之路/全栈开发社区，春招/秋招/校招/面试</p>
+<h3 id="xingshaocheng--architect-awesome"><a class="header" href="#xingshaocheng--architect-awesome"><a href="https://github.com/xingshaocheng/architect-awesome">xingshaocheng / architect-awesome</a></a></h3>
+<p>后端架构师技术图谱</p>
+<h3 id="yongxinz--backend-interview"><a class="header" href="#yongxinz--backend-interview"><a href="https://github.com/yongxinz/backend-interview">yongxinz / backend-interview</a></a></h3>
+<p>后端面试题汇总（Python、Redis、MySQL、PostgreSQL、Kafka、数据结构、算法、编程、网络）</p>
+<h3 id="phodal--growth-ebook"><a class="header" href="#phodal--growth-ebook"><a href="https://github.com/phodal/growth-ebook">phodal / growth-ebook</a></a></h3>
+<p>Growth Engineering: The Definitive Guide。全栈增长工程师指南</p>
+<hr />
+<p><strong>LeetCode &amp; Algorithms</strong></p>
+<h3 id="labuladong--fucking-algorithm"><a class="header" href="#labuladong--fucking-algorithm"><a href="https://github.com/labuladong/fucking-algorithm">labuladong / fucking-algorithm</a></a></h3>
+<p>刷算法全靠套路，认准 labuladong 就够了！English version supported! Crack LeetCode, not only how, but also why.</p>
+<h3 id="youngyangyang04--leetcode-master"><a class="header" href="#youngyangyang04--leetcode-master"><a href="https://github.com/youngyangyang04/leetcode-master">youngyangyang04 / leetcode-master</a></a></h3>
+<p>LeetCode 刷题攻略：200道经典题目刷题顺序，共60w字的详细图解，视频难点剖析，50余张思维导图，支持C++，Java，Python，Go，JavaScript等多语言版本，从此算法学习不再迷茫！🔥🔥 来看看，你会发现相见恨晚！🚀</p>
+<h3 id="keon--algorithms"><a class="header" href="#keon--algorithms"><a href="https://github.com/keon/algorithms">keon / algorithms</a></a></h3>
+<p>Minimal examples of data structures and algorithms in Python</p>
+<h3 id="thealgorithms--python"><a class="header" href="#thealgorithms--python"><a href="https://github.com/TheAlgorithms/Python">TheAlgorithms / Python</a></a></h3>
+<p>All Algorithms implemented in Python</p>
+<h3 id="thealgorithms--c"><a class="header" href="#thealgorithms--c"><a href="https://github.com/TheAlgorithms/C-Plus-Plus">TheAlgorithms / C++</a></a></h3>
+<p>All Algorithms implemented in C++</p>
+<h3 id="thealgorithms"><a class="header" href="#thealgorithms"><a href="https://github.com/TheAlgorithms">TheAlgorithms</a></a></h3>
+<p>All Algorithms implemented in different languages</p>
+<h3 id="misterbooo--leetcodeanimation"><a class="header" href="#misterbooo--leetcodeanimation"><a href="https://github.com/MisterBooo/LeetCodeAnimation">MisterBooo / LeetCodeAnimation</a></a></h3>
+<p>Demonstrate all the questions on LeetCode in the form of animation.（用动画的形式呈现解LeetCode题目的思路）</p>
+<h3 id="gzc--clrs"><a class="header" href="#gzc--clrs"><a href="https://github.com/gzc/CLRS">gzc / CLRS</a></a></h3>
+<p>📓Solutions to Introduction to Algorithms</p>
+<h3 id="trekhleb--javascript-algorithms"><a class="header" href="#trekhleb--javascript-algorithms">trekhleb / javascript-algorithms</a></h3>
+<p>📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings</p>
+<h3 id="halfrost--leetcode-go"><a class="header" href="#halfrost--leetcode-go"><a href="https://github.com/halfrost/LeetCode-Go">halfrost / LeetCode-Go</a></a></h3>
+<p>✅ Solutions to LeetCode by Go, 100% test coverage, runtime beats 100% / LeetCode 题解</p>
+<hr />
+<p><strong>Learn Design Patterns</strong></p>
+<h3 id="dovamir--awesome-design-patterns"><a class="header" href="#dovamir--awesome-design-patterns"><a href="https://github.com/DovAmir/awesome-design-patterns">DovAmir / awesome-design-patterns</a></a></h3>
+<p>Unstar</p>
+<p>A curated list of software and architecture related design patterns.</p>
+<h3 id="iluwatar--java-design-patterns"><a class="header" href="#iluwatar--java-design-patterns"><a href="https://github.com/iluwatar/java-design-patterns">iluwatar / java-design-patterns</a></a></h3>
+<p>Design patterns implemented in Java</p>
+<hr />
+<p><strong>Interview Preparation</strong></p>
+<h3 id="viraptor--reverse-interview"><a class="header" href="#viraptor--reverse-interview"><a href="https://github.com/viraptor/reverse-interview">viraptor / reverse-interview</a></a></h3>
+<p>Questions to ask the company during your interview</p>
+<h3 id="awesome-interview-questions"><a class="header" href="#awesome-interview-questions"><a href="https://github.com/DopplerHQ/awesome-interview-questions">awesome-interview-questions</a></a></h3>
+<p>A curated list of lists of technical interview questions.</p>
+<hr />
+<p><strong>Resources</strong></p>
+<p><a href="https://github.com/huggingface/datasets">huggingface / datasets</a></p>
+<p>🤗 The largest hub of ready-to-use datasets for ML models with fast, easy-to-use and efficient data manipulation tools</p>
+<h3 id="chinese-poetry--chinese-poetry"><a class="header" href="#chinese-poetry--chinese-poetry"><a href="https://github.com/chinese-poetry/chinese-poetry">chinese-poetry / chinese-poetry</a></a></h3>
+<p>The most comprehensive database of Chinese poetry 🧶最全中华古诗词数据库, 唐宋两朝近一万四千古诗人, 接近5.5万首唐诗加26万宋诗. 两宋时期1564位词人，21050首词。</p>
+<p><a href="https://github.com/public-apis/public-apis">public-apis / public-apis</a></p>
+<p>A collective list of free APIs</p>
+<hr />
+<p><strong>Learn C++</strong></p>
+<h3 id="huihut--interview"><a class="header" href="#huihut--interview"><a href="https://github.com/huihut/interview">huihut / interview</a></a></h3>
+<p>📚 C/C++ 技术面试基础知识总结，包括语言、程序库、数据结构、算法、系统、网络、链接装载库等知识及面试经验、招聘、内推等信息。This repository is a summary of the basic knowledge of recruiting job seekers and beginners in the direction of C/C++ technology, in…</p>
+<h3 id="jobbole--awesome-cpp-cn"><a class="header" href="#jobbole--awesome-cpp-cn"><a href="https://github.com/jobbole/awesome-cpp-cn">jobbole / awesome-cpp-cn</a></a></h3>
+<p>C++ 资源大全中文版，标准库、Web应用框架、人工智能、数据库、图片处理、机器学习、日志、代码分析等。由「开源前哨」和「CPP开发者」微信公号团队维护更新。</p>
+<hr />
+<p><strong>Learn Python</strong></p>
+<h3 id="jackfrued--python-100-days"><a class="header" href="#jackfrued--python-100-days"><a href="https://github.com/jackfrued/Python-100-Days">jackfrued / Python-100-Days</a></a></h3>
+<p>Python - 100天从新手到大师</p>
+<h3 id="pierian-data--complete-python-3-bootcamp"><a class="header" href="#pierian-data--complete-python-3-bootcamp"><a href="https://github.com/Pierian-Data/Complete-Python-3-Bootcamp">Pierian-Data / Complete-Python-3-Bootcamp</a></a></h3>
+<p>Course Files for Complete Python 3 Bootcamp Course on Udemy</p>
+<h3 id="maicss--pyqt5-chinese-tutorial"><a class="header" href="#maicss--pyqt5-chinese-tutorial"><a href="https://github.com/maicss/PyQt5-Chinese-tutorial">maicss / PyQt5-Chinese-tutorial</a></a></h3>
+<p>PyQt5中文教程</p>
+<h3 id="pyqt5--pyqt"><a class="header" href="#pyqt5--pyqt"><a href="https://github.com/PyQt5/PyQt">PyQt5 / PyQt</a></a></h3>
+<p>PyQt Examples（PyQt各种测试和例子） PyQt4 PyQt5</p>
+<h3 id="pyqt--examples"><a class="header" href="#pyqt--examples"><a href="https://github.com/pyqt/examples">pyqt / examples</a></a></h3>
+<p>Learn to create a desktop app with Python and Qt</p>
+<h3 id="nedbat--byterun"><a class="header" href="#nedbat--byterun"><a href="https://github.com/nedbat/byterun">nedbat / byterun</a></a></h3>
+<p>A Python implementation of a Python bytecode runner</p>
+<h3 id="pythonguis--15-minute-apps"><a class="header" href="#pythonguis--15-minute-apps"><a href="https://github.com/pythonguis/15-minute-apps">pythonguis / 15-minute-apps</a></a></h3>
+<p>15 minute (small) desktop apps built with PyQt</p>
+<h3 id="mpld3--mpld3"><a class="header" href="#mpld3--mpld3"><a href="https://github.com/mpld3/mpld3">mpld3 / mpld3</a></a></h3>
+<p>D3 Renderings of Matplotlib Graphics</p>
+<hr />
+<p><strong>Learn Java</strong></p>
+<h3 id="hollischuang--tobetopjavaer"><a class="header" href="#hollischuang--tobetopjavaer"><a href="https://github.com/hollischuang/toBeTopJavaer">hollischuang / toBeTopJavaer</a></a></h3>
+<p>To Be Top Javaer - Java工程师成神之路</p>
+<h3 id="itwanger--javabooks"><a class="header" href="#itwanger--javabooks"><a href="https://github.com/itwanger/JavaBooks">itwanger / JavaBooks</a></a></h3>
+<p>Java 程序员常读书单整理，附下载地址，助力构建最强知识体系。但不限于 Java，包括设计模式、计算机网络、操作系统、数据库、数据结构与算法、大数据、架构、面试等等。</p>
+<h3 id="dunwu--javacore"><a class="header" href="#dunwu--javacore"><a href="https://github.com/dunwu/javacore">dunwu / javacore</a></a></h3>
+<p>☕ JavaCore 是对 Java 核心技术的经验总结。</p>
+<h3 id="duguqiubai--java"><a class="header" href="#duguqiubai--java"><a href="https://github.com/DuGuQiuBai/Java">DuGuQiuBai / Java</a></a></h3>
+<p>27天成为Java大神</p>
+<h3 id="snailclimb--javaguide"><a class="header" href="#snailclimb--javaguide"><a href="https://github.com/Snailclimb/JavaGuide">Snailclimb / JavaGuide</a></a></h3>
+<p>「Java学习+面试指南」一份涵盖大部分 Java 程序员所需要掌握的核心知识。准备 Java 面试，首选 JavaGuide！</p>
+<h3 id="doocs--advanced-java"><a class="header" href="#doocs--advanced-java"><a href="https://github.com/doocs/advanced-java">doocs / advanced-java</a></a></h3>
+<p>😮 Core Interview Questions &amp; Answers For Experienced Java(Backend) Developers | 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识</p>
+<h3 id="doocs--source-code-hunter"><a class="header" href="#doocs--source-code-hunter"><a href="https://github.com/doocs/source-code-hunter">doocs / source-code-hunter</a></a></h3>
+<p>😱 从源码层面，剖析挖掘互联网行业主流技术的底层实现原理，为广大开发者 “提升技术深度” 提供便利。目前开放 Spring 全家桶，Mybatis、Netty、Dubbo 框架，及 Redis、Tomcat 中间件等</p>
+<hr />
+<p><strong>Learn Linux</strong></p>
+<h3 id="jlevy--the-art-of-command-line"><a class="header" href="#jlevy--the-art-of-command-line"><a href="https://github.com/jlevy/the-art-of-command-line">jlevy / the-art-of-command-line</a></a></h3>
+<p>Master the command line, in one page</p>
+<p><a href="https://github.com/ohmyzsh/ohmyzsh">ohmyzsh / ohmyzsh</a></p>
+<p>A delightful community-driven (with 1900+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, OSX, hub, docker, homebrew, node, php, python, e…</p>
+<hr />
+<p><strong>Learn AWS</strong></p>
+<h3 id="open-guides--og-aws"><a class="header" href="#open-guides--og-aws"><a href="https://github.com/open-guides/og-aws">open-guides / og-aws</a></a></h3>
+<p>📙 Amazon Web Services — a practical guide</p>
+<h3 id="awsdocs--aws-doc-sdk-examples"><a class="header" href="#awsdocs--aws-doc-sdk-examples"><a href="https://github.com/awsdocs/aws-doc-sdk-examples">awsdocs / aws-doc-sdk-examples</a></a></h3>
+<p>Welcome to the AWS Code Examples Repository. This repo contains code examples used in the AWS documentation, AWS SDK Developer Guides, and more. For more information, see the <a href="http://Readme.rs">Readme.rs</a>t file below.</p>
+<h3 id="donnemartin--awesome-aws"><a class="header" href="#donnemartin--awesome-aws"><a href="https://github.com/donnemartin/awesome-aws">donnemartin / awesome-aws</a></a></h3>
+<p>A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources. Featuring the Fiery Meter of AWSome.</p>
+<h3 id="aws--aws-cdk"><a class="header" href="#aws--aws-cdk"><a href="https://github.com/aws/aws-cdk">aws / aws-cdk</a></a></h3>
+<p>The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code</p>
+<h3 id="aws--serverless-application-model"><a class="header" href="#aws--serverless-application-model"><a href="https://github.com/aws/serverless-application-model">aws / serverless-application-model</a></a></h3>
+<p>AWS Serverless Application Model (SAM) is an open-source framework for building serverless applications</p>
+<h3 id="aws--aws-cli"><a class="header" href="#aws--aws-cli"><a href="https://github.com/aws/aws-cli">aws / aws-cli</a></a></h3>
+<p>Universal Command Line Interface for Amazon Web Services</p>
+<hr />
+<p><strong>Learn Docker</strong></p>
+<p><a href="https://github.com/veggiemonk/awesome-docker">https://github.com/veggiemonk/awesome-docker</a></p>
+<hr />
+<p><strong>Classical Projects</strong></p>
+<h3 id="torvalds--linux"><a class="header" href="#torvalds--linux"><a href="https://github.com/torvalds/linux">torvalds / linux</a></a></h3>
+<p>Linux kernel source tree</p>
+<h3 id="protocolbuffers--protobuf"><a class="header" href="#protocolbuffers--protobuf"><a href="https://github.com/protocolbuffers/protobuf">protocolbuffers / protobuf</a></a></h3>
+<p>Protocol Buffers - Google's data interchange format</p>
+<h3 id="facebook--folly"><a class="header" href="#facebook--folly"><a href="https://github.com/facebook/folly">facebook / folly</a></a></h3>
+<p>An open-source C++ library developed and used at Facebook.</p>
+<h3 id="spring-projects--spring-boot"><a class="header" href="#spring-projects--spring-boot"><a href="https://github.com/spring-projects/spring-boot">spring-projects / spring-boot</a></a></h3>
+<p>Spring Boot</p>
+<h3 id="google--googletest"><a class="header" href="#google--googletest"><a href="https://github.com/google/googletest">google / googletest</a></a></h3>
+<p>GoogleTest - Google Testing and Mocking Framework</p>
+<h3 id="microsoft--terminal"><a class="header" href="#microsoft--terminal"><a href="https://github.com/microsoft/terminal">microsoft / terminal</a></a></h3>
+<p>The new Windows Terminal and the original Windows console host, all in the same place!</p>
+<h3 id="godotengine--godot"><a class="header" href="#godotengine--godot"><a href="https://github.com/godotengine/godot">godotengine / godot</a></a></h3>
+<p>Godot Engine – Multi-platform 2D and 3D game engine</p>
+<h3 id="google--leveldb"><a class="header" href="#google--leveldb"><a href="https://github.com/google/leveldb">google / leveldb</a></a></h3>
+<p>LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to string values.</p>
+<h3 id="telegramdesktop--tdesktop"><a class="header" href="#telegramdesktop--tdesktop"><a href="https://github.com/telegramdesktop/tdesktop">telegramdesktop / tdesktop</a></a></h3>
+<p>Telegram Desktop messaging app</p>
+<h3 id="jupyter--jupyter"><a class="header" href="#jupyter--jupyter"><a href="https://github.com/jupyter/jupyter">jupyter / jupyter</a></a></h3>
+<p>Jupyter metapackage for installation, docs and chat</p>
+<h3 id="ipython--ipython"><a class="header" href="#ipython--ipython"><a href="https://github.com/ipython/ipython">ipython / ipython</a></a></h3>
+<p>Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.</p>
+<hr />
+<p><strong>Project Ideas &amp; Lists</strong></p>
+<h3 id="florinpop17--app-ideas"><a class="header" href="#florinpop17--app-ideas"><a href="https://github.com/florinpop17/app-ideas">florinpop17 / app-ideas</a></a></h3>
+<p>A Collection of application ideas which can be used to improve your coding skills.</p>
+<h3 id="practical-tutorials--project-based-learning"><a class="header" href="#practical-tutorials--project-based-learning"><a href="https://github.com/practical-tutorials/project-based-learning">practical-tutorials / project-based-learning</a></a></h3>
+<p>Curated list of project-based tutorials</p>
+<h3 id="python-world--python-mini-projects"><a class="header" href="#python-world--python-mini-projects"><a href="https://github.com/Python-World/python-mini-projects">Python-World / python-mini-projects</a></a></h3>
+<p>A collection of simple python mini projects to enhance your python skills</p>
+<h3 id="charlespikachu--games"><a class="header" href="#charlespikachu--games"><a href="https://github.com/CharlesPikachu/Games">CharlesPikachu / Games</a></a></h3>
+<p>Create interesting games by pure python.</p>
+<h3 id="sindresorhus--awesome"><a class="header" href="#sindresorhus--awesome"><a href="https://github.com/sindresorhus/awesome">sindresorhus / awesome</a></a></h3>
+<p>😎 Awesome lists about all kinds of interesting topics</p>
+<h3 id="aosabook--500lines"><a class="header" href="#aosabook--500lines"><a href="https://github.com/aosabook/500lines">aosabook / 500lines</a></a></h3>
+<p>500 Lines or Less</p>
+<h3 id="danistefanovic--build-your-own-x"><a class="header" href="#danistefanovic--build-your-own-x"><a href="https://github.com/danistefanovic/build-your-own-x">danistefanovic / build-your-own-x</a></a></h3>
+<p>🤓 Build your own (insert technology here)</p>
+<h3 id="mahmoud--awesome-python-applications"><a class="header" href="#mahmoud--awesome-python-applications"><a href="https://github.com/mahmoud/awesome-python-applications">mahmoud / awesome-python-applications</a></a></h3>
+<p>💿 Free software that works great, and also happens to be open-source Python.</p>
+<hr />
+<p><strong>Projects</strong></p>
+<h3 id="neozhaoliang--pywonderland"><a class="header" href="#neozhaoliang--pywonderland"><a href="https://github.com/neozhaoliang/pywonderland">neozhaoliang / pywonderland</a></a></h3>
+<p>A tour in the wonderland of math with python.</p>
+<h3 id="willmcgugan--textual"><a class="header" href="#willmcgugan--textual"><a href="https://github.com/willmcgugan/textual">willmcgugan / textual</a></a></h3>
+<p>Textual is a TUI (Text User Interface) framework for Python inspired by modern web development.</p>
+<h3 id="peterl1n--robustvideomatting"><a class="header" href="#peterl1n--robustvideomatting"><a href="https://github.com/PeterL1n/RobustVideoMatting">PeterL1n / RobustVideoMatting</a></a></h3>
+<p>Robust Video Matting in PyTorch, TensorFlow, TensorFlow.js, ONNX, CoreML!</p>
+<h3 id="microsoft--muzic"><a class="header" href="#microsoft--muzic"><a href="https://github.com/microsoft/muzic">microsoft / muzic</a></a></h3>
+<p>Muzic: Music Understanding and Generation with Artificial Intelligence</p>
+<h3 id="gitbookio--gitbook"><a class="header" href="#gitbookio--gitbook"><a href="https://github.com/GitbookIO/gitbook">GitbookIO / gitbook</a></a></h3>
+<p>📝 Modern documentation format and toolchain using Git and Markdown</p>
+<h3 id="babysor--mockingbird"><a class="header" href="#babysor--mockingbird"><a href="https://github.com/babysor/MockingBird">babysor / MockingBird</a></a></h3>
+<p>🚀AI拟声: 5秒内克隆您的声音并生成任意语音内容 Clone a voice in 5 seconds to generate arbitrary speech in real-time</p>
+<h3 id="sherlock-project--sherlock"><a class="header" href="#sherlock-project--sherlock"><a href="https://github.com/sherlock-project/sherlock">sherlock-project / sherlock</a></a></h3>
+<p>🔎 Hunt down social media accounts by username across social networks</p>
+<h3 id="hardikvasa--google-images-download"><a class="header" href="#hardikvasa--google-images-download"><a href="https://github.com/hardikvasa/google-images-download">hardikvasa / google-images-download</a></a></h3>
+<p>Python Script to download hundreds of images from 'Google Images'. It is a ready-to-run code!</p>
+<h3 id="marceloprates--prettymaps"><a class="header" href="#marceloprates--prettymaps"><a href="https://github.com/marceloprates/prettymaps">marceloprates / prettymaps</a></a></h3>
+<p>A small set of Python functions to draw pretty maps from OpenStreetMap data. Based on osmnx, matplotlib and shapely libraries.</p>
+<h3 id="paddlepaddle--paddleocr"><a class="header" href="#paddlepaddle--paddleocr"><a href="https://github.com/PaddlePaddle/PaddleOCR">PaddlePaddle / PaddleOCR</a></a></h3>
+<p>Awesome multilingual OCR toolkits based on PaddlePaddle （practical ultra lightweight OCR system, support 80+ languages recognition, provide data annotation and synthesis tools, support training and…</p>
+<h3 id="anuken--mindustry"><a class="header" href="#anuken--mindustry"><a href="https://github.com/Anuken/Mindustry">Anuken / Mindustry</a></a></h3>
+<p>A sandbox tower defense game (Java)</p>
+<h3 id="kr1s77--awesome-python-login-model"><a class="header" href="#kr1s77--awesome-python-login-model"><a href="https://github.com/Kr1s77/awesome-python-login-model">Kr1s77 / awesome-python-login-model</a></a></h3>
+<p>😮python模拟登陆一些大型网站，还有一些简单的爬虫，希望对你们有所帮助❤️，如果喜欢记得给个star哦🌟</p>
+<h3 id="yemount--pose-animator"><a class="header" href="#yemount--pose-animator"><a href="https://github.com/yemount/pose-animator">yemount / pose-animator</a></a></h3>
+<h3 id="corentinj--real-time-voice-cloning"><a class="header" href="#corentinj--real-time-voice-cloning"><a href="https://github.com/CorentinJ/Real-Time-Voice-Cloning">CorentinJ / Real-Time-Voice-Cloning</a></a></h3>
+<p>Clone a voice in 5 seconds to generate arbitrary speech in real-time</p>
+<h3 id="lava--matplotlib-cpp"><a class="header" href="#lava--matplotlib-cpp"><a href="https://github.com/lava/matplotlib-cpp">lava / matplotlib-cpp</a></a></h3>
+<p>Extremely simple yet powerful header-only C++ plotting library built on the popular matplotlib</p>
+<hr />
+<p><strong>Code Snippets</strong></p>
+<h3 id="30-seconds--30-seconds-of-code"><a class="header" href="#30-seconds--30-seconds-of-code"><a href="https://github.com/30-seconds/30-seconds-of-code">30-seconds / 30-seconds-of-code</a></a></h3>
+<p>Short JavaScript code snippets for all your development needs</p>
+<h3 id="geekcomputers--python"><a class="header" href="#geekcomputers--python"><a href="https://github.com/geekcomputers/Python">geekcomputers / Python</a></a></h3>
+<p>My Python Examples</p>
+<h3 id="charlespikachu--tools"><a class="header" href="#charlespikachu--tools"><a href="https://github.com/CharlesPikachu/Tools">CharlesPikachu / Tools</a></a></h3>
+<p>Some useful tools written in python.</p>
+<h3 id="coreymschafer--code_snippets"><a class="header" href="#coreymschafer--code_snippets"><a href="https://github.com/CoreyMSchafer/code_snippets">CoreyMSchafer / code_snippets</a></a></h3>
+<hr />
+<p><strong>Computational Geometry &amp; Vision &amp; Graphics</strong></p>
+<h3 id="jslee02--awesome-graphics-libraries"><a class="header" href="#jslee02--awesome-graphics-libraries"><a href="https://github.com/jslee02/awesome-graphics-libraries">jslee02 / awesome-graphics-libraries</a></a></h3>
+<p>😎 A curated list of 3D graphics libraries and resources</p>
+<h3 id="cnr-isti-vclab--pymeshlab"><a class="header" href="#cnr-isti-vclab--pymeshlab"><a href="https://github.com/cnr-isti-vclab/PyMeshLab">cnr-isti-vclab / PyMeshLab</a></a></h3>
+<p>The open source mesh processing python library</p>
+<h3 id="cnr-isti-vclab--vcglib"><a class="header" href="#cnr-isti-vclab--vcglib"><a href="https://github.com/cnr-isti-vclab/vcglib">cnr-isti-vclab / vcglib</a></a></h3>
+<p>The VCGlib is a C++, templated, no dependency, library for manipulation, processing and cleaning of triangle meshes</p>
+<h3 id="kroitor--gjkc"><a class="header" href="#kroitor--gjkc"><a href="https://github.com/kroitor/gjk.c">kroitor / gjk.c</a></a></h3>
+<p>Gilbert-Johnson-Keerthi (GJK) collision detection algorithm in 200 lines of clean plain C</p>
+<h3 id="nschloe--pygalmesh"><a class="header" href="#nschloe--pygalmesh"><a href="https://github.com/nschloe/pygalmesh">nschloe / pygalmesh</a></a></h3>
+<p>🕸️ A Python interface to CGAL's meshing tools</p>
+<h3 id="pyvista--tetgen"><a class="header" href="#pyvista--tetgen"><a href="https://github.com/pyvista/tetgen">pyvista / tetgen</a></a></h3>
+<p>A Python interface to the C++ TetGen library to generate tetrahedral meshes of any 3D polyhedral domains</p>
+<h3 id="nschloe--meshio"><a class="header" href="#nschloe--meshio"><a href="https://github.com/nschloe/meshio">nschloe / meshio</a></a></h3>
+<p>🕸️ input/output for many mesh formats</p>
+<h3 id="kornia--kornia"><a class="header" href="#kornia--kornia"><a href="https://github.com/kornia/kornia">kornia / kornia</a></a></h3>
+<p>Open Source Differentiable Computer Vision Library</p>
+<h3 id="nschloe--pygmsh"><a class="header" href="#nschloe--pygmsh"><a href="https://github.com/nschloe/pygmsh">nschloe / pygmsh</a></a></h3>
+<p>🕸️ Gmsh for Python</p>
+<h3 id="inducer--meshpy"><a class="header" href="#inducer--meshpy"><a href="https://github.com/inducer/meshpy">inducer / meshpy</a></a></h3>
+<p>2D/3D simplicial mesh generator interface for Python (Triangle, TetGen, gmsh)</p>
+<h3 id="taichi-dev--taichi"><a class="header" href="#taichi-dev--taichi"><a href="https://github.com/taichi-dev/taichi">taichi-dev / taichi</a></a></h3>
+<p>Parallel programming for everyone.</p>
+<h3 id="pmp-library--pmp-library"><a class="header" href="#pmp-library--pmp-library"><a href="https://github.com/pmp-library/pmp-library">pmp-library / pmp-library</a></a></h3>
+<p>The Polygon Mesh Processing Library</p>
+<h3 id="davidstutz--mesh-voxelization"><a class="header" href="#davidstutz--mesh-voxelization"><a href="https://github.com/davidstutz/mesh-voxelization">davidstutz / mesh-voxelization</a></a></h3>
+<p>C++ implementation for computing occupancy grids and signed distance functions (SDFs) from watertight meshes.</p>
+<h3 id="liangliangnan--easy3d"><a class="header" href="#liangliangnan--easy3d"><a href="https://github.com/LiangliangNan/Easy3D">LiangliangNan / Easy3D</a></a></h3>
+<p>A lightweight, easy-to-use, and efficient C++ library for processing and rendering 3D data</p>
+<h3 id="juj--mathgeolib"><a class="header" href="#juj--mathgeolib"><a href="https://github.com/juj/MathGeoLib">juj / MathGeoLib</a></a></h3>
+<p>A C++ library for linear algebra and geometry manipulation for computer graphics.</p>
+<h3 id="habrador--computational-geometry"><a class="header" href="#habrador--computational-geometry"><a href="https://github.com/Habrador/Computational-geometry">Habrador / Computational-geometry</a></a></h3>
+<p>Computational Geometry Unity library with implementations of intersection algorithms, triangulations like delaunay, voronoi diagrams, polygon clipping, bezier curves, ear clipping, convex hulls, me…</p>
+<h3 id="stefankoegl--kdtree"><a class="header" href="#stefankoegl--kdtree"><a href="https://github.com/stefankoegl/kdtree">stefankoegl / kdtree</a></a></h3>
+<p>A Python implementation of a kd-tree</p>
+<h3 id="erich666--graphicsgems"><a class="header" href="#erich666--graphicsgems"><a href="https://github.com/erich666/GraphicsGems">erich666 / GraphicsGems</a></a></h3>
+<p>Code for the &quot;Graphics Gems&quot; book series</p>
+<h3 id="gradientspace--geometry3sharp"><a class="header" href="#gradientspace--geometry3sharp"><a href="https://github.com/gradientspace/geometry3Sharp">gradientspace / geometry3Sharp</a></a></h3>
+<p>C# library for 2D/3D geometric computation, mesh algorithms, and so on. Boost license.</p>
+<hr />
+<p><strong>Reservoir Simulation</strong></p>
+<h3 id="equinor--ert"><a class="header" href="#equinor--ert"><a href="https://github.com/equinor/ert">equinor / ert</a></a></h3>
+<p>ERT—Ensemble based Reservoir Tool—is a tool to run ensemble based on reservoir models. ERT was originally devised as tool to do model updating (history matching) with the EnKF method, now the prima…</p>
+<h3 id="shaffer1--rva"><a class="header" href="#shaffer1--rva"><a href="https://github.com/shaffer1/RVA">shaffer1 / RVA</a></a></h3>
+<p>Reservoir Visualization and Analysis</p>
+<h3 id="opm--opm-core"><a class="header" href="#opm--opm-core"><a href="https://github.com/OPM/opm-core">OPM / opm-core</a></a></h3>
+<p>Collection of utilities, solvers and other components.</p>
+<h3 id="opm--opm-tests"><a class="header" href="#opm--opm-tests"><a href="https://github.com/OPM/opm-tests">OPM / opm-tests</a></a></h3>
+<p>Data sets intended for integration and regression testing reservoir simulations</p>
+<h3 id="opm--opm-parser"><a class="header" href="#opm--opm-parser"><a href="https://github.com/OPM/opm-parser">OPM / opm-parser</a></a></h3>
+<h3 id="opm--resinsight"><a class="header" href="#opm--resinsight"><a href="https://github.com/OPM/ResInsight">OPM / ResInsight</a></a></h3>
+<p>3D viewer and post processing of reservoir models</p>
+<h3 id="opm--opm-simulators"><a class="header" href="#opm--opm-simulators"><a href="https://github.com/OPM/opm-simulators">OPM / opm-simulators</a></a></h3>
+<p>Simulator programs and utilities for automatic differentiation.</p>
+<hr />
+<p><strong>Optimization</strong></p>
+<h3 id="cma-es--pycma"><a class="header" href="#cma-es--pycma"><a href="https://github.com/CMA-ES/pycma">CMA-ES / pycma</a></a></h3>
+<p>Python implementation of CMA-ES</p>
+<hr />
+<p><strong>Trading</strong></p>
+<h3 id="quantopian--zipline"><a class="header" href="#quantopian--zipline"><a href="https://github.com/quantopian/zipline">quantopian / zipline</a></a></h3>
+<p>Zipline, a Pythonic Algorithmic Trading Library</p>
+<h3 id="jake0303--robinhood-rsi-trading-bot"><a class="header" href="#jake0303--robinhood-rsi-trading-bot"><a href="https://github.com/Jake0303/RobinHood-RSI-Trading-Bot">Jake0303 / RobinHood-RSI-Trading-Bot</a></a></h3>
+<p>A Robinhood stock trading bot in Python using the RSI indicator <a href="https://youtu.be/kSLkRXY3NPQ">https://youtu.be/kSLkRXY3NPQ</a></p>
+<h3 id="microsoft--qlib"><a class="header" href="#microsoft--qlib"><a href="https://github.com/microsoft/qlib">microsoft / qlib</a></a></h3>
+<p>Qlib is an AI-oriented quantitative investment platform, which aims to realize the potential, empower the research, and create the value of AI technologies in quantitative investment. With Qlib, yo…</p>
+<hr />
+<p><strong>Interesting</strong></p>
+<h3 id="chakazul--lenia"><a class="header" href="#chakazul--lenia"><a href="https://github.com/Chakazul/Lenia">Chakazul / Lenia</a></a></h3>
+<p>Lenia - Mathematical Life Forms</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Resources/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Resources/System Design.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Resources/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Resources/System Design.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

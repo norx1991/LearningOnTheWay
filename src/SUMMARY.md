@@ -198,3 +198,4 @@
 - [Resources](Resources/README.md)
   - [Github](Resources/Github%20Repos.md)
   - [System Design](Resources/System%20Design.md)
+  - [Machine Learning](Resources/ML.md)

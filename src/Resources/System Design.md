@@ -38,8 +38,6 @@
 
 [checkcheckzz / system-design-interview](https://github.com/checkcheckzz/system-design-interview)
 
-System design interview for IT companies
-
 * * *
 
 **Grokking System Design**
